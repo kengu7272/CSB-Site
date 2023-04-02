@@ -1,4 +1,4 @@
-html {
+:root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -15,7 +15,6 @@ html {
 
   height: 100%;
   width: 100%;
-  overflow: auto;
 }
 
 a {
@@ -29,6 +28,10 @@ a:hover {
 
 body {
   margin: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding-bottom: 16vh;
 }
 
 button {

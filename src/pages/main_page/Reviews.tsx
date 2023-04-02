@@ -10,7 +10,7 @@ const MakeReview: React.FC<ReviewProps> = ({name, review, rating}) => {
             <text>{review}</text>
             <text>-{name} ({rating})</text>
         </div>
-    )
+    );
 }
 
 function Reviews() {
@@ -33,7 +33,7 @@ function Reviews() {
               proudly stand at 6'4, I owe my life to these guys!" rating="5/5"></MakeReview>
             </div>
         </div>
-    )
+    );
 }
 
-export default Reviews
+export default Reviews;

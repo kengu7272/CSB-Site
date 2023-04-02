@@ -7,7 +7,7 @@ function Introduction() {
             expand our reach and do it better than the competition.
       </text>
     </div>
-  )
+  );
 }
 
-export default Introduction
+export default Introduction;
