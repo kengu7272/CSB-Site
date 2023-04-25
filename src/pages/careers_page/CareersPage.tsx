@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import workers from './workers.jpg'
-import BlueHeader from '../../Components/BlueHeader';
+import BlueHeader from '../../components/BlueHeader';
 
 interface PositionProps {
     name: string;

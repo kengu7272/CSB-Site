@@ -1,5 +1,5 @@
 import city from './city.jpg'
-import BlueHeader from '../../Components/BlueHeader';
+import BlueHeader from '../../components/BlueHeader';
 
 class Business {
   name: string;

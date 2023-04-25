@@ -1,4 +1,4 @@
-import BlueHeader from "../../Components/BlueHeader";
+import BlueHeader from "../../components/BlueHeader";
 
 interface ReviewProps {
   name: string;
