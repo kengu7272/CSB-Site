@@ -13,7 +13,7 @@ function ContactPage() {
     let description = "We usually don't bite.";
     return (
         <>
-            <BlueHeader title={title} description={description} /> <p className="border">{monthDayYear}</p>
+            <BlueHeader title={title} description={description} /> <p className="border bg-gray-400">{monthDayYear}</p>
 
             <div className="flex justify-center">
                 <div className="w-[40%] m-[8%] h-[75vh] bg-[#5c5c5c] rounded-lg border relative text-center">
