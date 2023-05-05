@@ -1,13 +1,11 @@
-import './App.css';
-import Layout from './layout/Layout';
-import MainPage from './pages/main_page/MainPage';
-import AboutPage from './pages/about_page/AboutPage';
-import StaffPage from './pages/staff_page/StaffPage';
-import CareersPage from './pages/careers_page/CareersPage';
-import ContactPage from './pages/contact_page/ContactPage';
-import NoPage from './pages/no_page/NoPage';
+import Layout from '../components/Layout';
+import MainPage from '../pages/main_page/MainPage';
+import AboutPage from '../pages/about_page/AboutPage';
+import StaffPage from '../pages/staff_page/StaffPage';
+import CareersPage from '../pages/careers_page/CareersPage';
+import ContactPage from '../pages/contact_page/ContactPage';
+import NoPage from '../pages/no_page/NoPage';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-
 
 function App() {
   return (
@@ -23,9 +21,7 @@ function App() {
             <Route path="*" element={<NoPage />} />
           </Route>
         </Routes>
-      </Router>
-
-      
+      </Router>     
     </>
   );
 }

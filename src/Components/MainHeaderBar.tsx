@@ -1,11 +1,10 @@
 import {Link} from 'react-router-dom';
-import './MainHeaderBar.css';
 
 function MainHeaderBar() {
     return (
-      <div id="mainHeaderBar">
-        <h2 id="companyName">CSB Enterprises</h2>
-        <nav id="links">
+      <div className="flex flex-row items-center h-[8vh] border-b border-[#636363]">
+        <h2 className="ml-[1vw] absolute">CSB Enterprises</h2>
+        <nav className="flex gap-[5vw] ml-auto mr-auto">
           <Link to="/">Home</Link>
           <Link to="/About">About</Link>
           <Link to="/Staff">Staff</Link>
@@ -13,6 +12,7 @@ function MainHeaderBar() {
           <Link to="/Contact">Contact</Link>
         </nav>
       </div>
+      
     );
   }
 
