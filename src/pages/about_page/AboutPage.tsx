@@ -20,7 +20,7 @@ interface BusinessProps {
 }
 
 let name = "MatchMakers";
-let description = "Match Makers is actually CSB's first venture into the business space and has yielded great returns\
+let description = "Match Makers is actually CSB's first venture into the business space and has yielded great returns \
 for the business, its employees, and its customers.";
 let detail = "The business model is that the customer contacts CSB about their desire to find a soul \
         mate. CSB then allocates its resources to finding the best partner to match the customer's needs. \
@@ -86,23 +86,23 @@ function Beginning() {
 
 const MakeBusiness: React.FC<BusinessProps> = (object: BusinessProps) => {
   return (
-    <div className='flex flex-row justify-center items-center mb-[5%] 
-    odd:mr-[25%] [&>h2]:odd:ml-[30%]
-    even:ml-[25%] even:flex-row-reverse [&>h2]:even:mr-[30%]'>
-      <div className='bg-[#5c5c5c] rounded-xl border p-[5%]'>
+    <div className='flex justify-center items-center w-5/6
+    odd:flex-row [&:nth-child(odd)>h1]:mr-auto
+    even:flex-row-reverse [&:nth-child(even)>h1]:ml-auto'>
+      <h1 className='border rounded-lg p-[1%]'>{object.business.name}</h1>
+      <div className='bg-[#5c5c5c] rounded-xl border p-[5%] w-[40%]'>
         <p>{object.business.description}</p>
         <br></br>
         <p>{object.business.detail}</p>
         <br></br>
         <p className='underline'>Fun Facts: </p>
-        <ul>
+        <ul className='list-[circle] list-inside'>
           <li>{object.business.facts[0]}</li>
           <li>{object.business.facts[1]}</li>
           <li>{object.business.facts[2]}</li>
           <li>{object.business.facts[3]}</li>
         </ul>
       </div>
-      <h2 className='border rounded-lg p-[1%]'>{object.business.name}</h2>
     </div>
   );
 }
@@ -111,7 +111,8 @@ function WhatWeDo() {
   return (
     <>
     <h2 className='ml-[15%]'>Ventures</h2>
-    <div className='my-[1%] mx-[15%] flex flex-col justify-center p-[1%] rounded-xl border-2 border-[#636363]'>
+    <div className='my-[1%] mx-[15%] flex flex-col justify-center items-center
+    p-[1%] rounded-xl border-2 border-[#636363]'>
       <MakeBusiness business={matchMakers} />
       <MakeBusiness business={CSBoxing} />
     </div>
