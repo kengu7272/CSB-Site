@@ -11,7 +11,7 @@ function ContactPage() {
     return (
         <>
             <BlueHeader title={title} description={description} /> 
-            <p className="text-3xl text-center m-[8%] rounded-xl">{monthDayYear}</p>
+            <p className="text-3xl desktop:text-6xl text-center m-[8%] desktop:m-[5%] rounded-xl">{monthDayYear}</p>
 
             <div className="flex justify-center">
                 <div className="w-[95%] mb-[8%] h-[65vh] bg-[#5c5c5c] rounded-lg border relative text-center text-sm

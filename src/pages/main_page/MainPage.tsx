@@ -11,7 +11,7 @@ const MakeReview: React.FC<ReviewProps> = ({name, review, rating}) => {
       <div className="flex flex-col justify-center bg-[#5c5c5c] text-center w-full h-[25vh]
       rounded-lg border-2 border-blue-400 py-[50%] text-base gap-8
       tablet:text-xl tablet:h-[50vh] tablet:p-[10%]
-      desktop:h-[50vh] desktop:w-[50vh] desktop:text-base desktop:p-2">
+      desktop:h-[40vh] desktop:w-[50vh] desktop:text-base desktop:p-2">
           <p>{review}</p>
           <p>-{name} ({rating})</p>
       </div>
