@@ -74,10 +74,9 @@ function Beginning() {
     <>
       <BlueHeader title={title} description={description} />
 
-      <div className='my-[1%] mx-[15%] flex flex-col justify-center'>
+      <div className='my-[2.5%] flex flex-col items-center text-center mx-[5%] border border-[#636363] rounded-xl p-4'>
         <h2 className='my-[1.5%]'>Our Story</h2>
         <p className='whitespace-pre-wrap'>{ourStory}</p>
-        <img className='w-full my-[1.5%]' src={city} alt="City Image"></img>
       </div>
     </>
   );
@@ -86,11 +85,9 @@ function Beginning() {
 
 const MakeBusiness: React.FC<BusinessProps> = (object: BusinessProps) => {
   return (
-    <div className='flex justify-center items-center w-5/6
-    odd:flex-row [&:nth-child(odd)>h1]:mr-auto
-    even:flex-row-reverse [&:nth-child(even)>h1]:ml-auto'>
-      <h1 className='border rounded-lg p-[1%]'>{object.business.name}</h1>
-      <div className='bg-[#5c5c5c] rounded-xl border p-[5%] w-[40%]'>
+    <div className='my-[2.5vh] flex flex-col items-center w-full'>
+      <h1 className='border rounded-lg p-[1%] text-3xl mb-[2.5vh]'>{object.business.name}</h1>
+      <div className='bg-[#5c5c5c] rounded-xl border p-[5%] w-[80%] text-center'>
         <p>{object.business.description}</p>
         <br></br>
         <p>{object.business.detail}</p>
@@ -110,8 +107,8 @@ const MakeBusiness: React.FC<BusinessProps> = (object: BusinessProps) => {
 function WhatWeDo() {
   return (
     <>
-    <h2 className='ml-[15%]'>Ventures</h2>
-    <div className='my-[1%] mx-[15%] flex flex-col justify-center items-center
+    <h2 className='text-center'>Ventures</h2>
+    <div className='my-[1%] mx-[5%] flex flex-col justify-center items-center
     p-[1%] rounded-xl border-2 border-[#636363]'>
       <MakeBusiness business={matchMakers} />
       <MakeBusiness business={CSBoxing} />
@@ -124,6 +121,7 @@ function AboutPage() {
     return (
         <div>
           <Beginning />
+          <img className='w-full my-[10%]' src={city} alt="City Image"></img>
           <WhatWeDo />
         </div>
     );

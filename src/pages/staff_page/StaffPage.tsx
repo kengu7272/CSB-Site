@@ -23,9 +23,9 @@ interface MakeEmployeeProps {
 
 const MakeEmployee: React.FC<MakeEmployeeProps> = ({employee}) => {
   return (
-    <div className="flex flex-col justify-center items-center w-[35vw] h-[35vw]
-    rounded-lg bg-[#444444] mx-[1%]">
-      <img className='border-2 rounded-full w-[20vw] h-[20vw]' src={employee.image} alt="Employee Image" />
+    <div className="flex flex-col justify-center items-center w-[75vw] h-fit p-2
+    rounded-lg bg-[#444444] my-[1%] text-center">
+      <img className='border-2 rounded-full w-[50vw] h-[50vw]' src={employee.image} alt="Employee Image" />
       <br></br>
       <h3>{employee.name}</h3>
       <br></br>
@@ -48,8 +48,8 @@ function StaffPage() {
         <>
           <BlueHeader title={title} description={description} />
 
-          <div className="my-[2.5%] h-[75vh] flex flex-row justify-center items-center
-           bg-[#5c5c5c] rounded-lg overflow-auto">
+          <div className="my-[5%] mx-[5%] h-full flex flex-col items-center
+           bg-[#5c5c5c] rounded-lg gap-2">
             <MakeEmployee employee={Kevin} />
             <MakeEmployee employee={Nick} />
             <MakeEmployee employee={Brandon} />
