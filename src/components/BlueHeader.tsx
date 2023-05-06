@@ -5,9 +5,9 @@ interface BlueHeaderProps {
 
 const BlueHeader: React.FC<BlueHeaderProps> = ({title, description}) => {
     return (
-        <div className="bg-blue-400 w-full h-[40vh] flex flex-col justify-center text-center content-center">
+        <div className="bg-blue-400 w-full h-[30vh] flex flex-col justify-center text-center content-center text-sm gap-[2vh]">
         <h1>{title}</h1>
-        <p>{description}</p>
+        <p className="mx-1">{description}</p>
         </div>
     );
 }
