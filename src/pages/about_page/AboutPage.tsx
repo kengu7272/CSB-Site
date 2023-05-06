@@ -74,8 +74,9 @@ function Beginning() {
     <>
       <BlueHeader title={title} description={description} />
 
-      <div className='my-[2.5%] flex flex-col items-center text-center mx-[5%] border border-[#636363] rounded-xl p-4'>
-        <h2 className='my-[1.5%]'>Our Story</h2>
+      <div className='my-[2.5%] flex flex-col items-center text-center mx-[5%] border border-[#636363] rounded-xl p-4
+      desktop:text-left desktop:items-start'>
+        <h2 className='my-[2.5%]'>Our Story</h2>
         <p className='whitespace-pre-wrap'>{ourStory}</p>
       </div>
     </>
@@ -85,9 +86,12 @@ function Beginning() {
 
 const MakeBusiness: React.FC<BusinessProps> = (object: BusinessProps) => {
   return (
-    <div className='my-[2.5vh] flex flex-col items-center w-full'>
+    <div className='my-[2.5vh] flex flex-col items-center w-full
+    desktop:odd:flex-row desktop:[&:nth-child(odd)>h1]:mr-auto desktop:even:flex-row-reverse desktop:[&:nth-child(even)>h1]:ml-auto
+    desktop:w-5/6'>
       <h1 className='border rounded-lg p-[1%] text-3xl mb-[2.5vh]'>{object.business.name}</h1>
-      <div className='bg-[#5c5c5c] rounded-xl border p-[5%] w-[80%] text-center'>
+      <div className='bg-[#5c5c5c] rounded-xl border p-[5%] w-[80%] text-center
+      desktop:w-1/2'>
         <p>{object.business.description}</p>
         <br></br>
         <p>{object.business.detail}</p>
@@ -107,7 +111,7 @@ const MakeBusiness: React.FC<BusinessProps> = (object: BusinessProps) => {
 function WhatWeDo() {
   return (
     <>
-    <h2 className='text-center'>Ventures</h2>
+    <h2 className='text-center mb-6'>Ventures</h2>
     <div className='my-[1%] mx-[5%] flex flex-col justify-center items-center
     p-[1%] rounded-xl border-2 border-[#636363]'>
       <MakeBusiness business={matchMakers} />
@@ -119,9 +123,11 @@ function WhatWeDo() {
 
 function AboutPage() {
     return (
-        <div>
+        <div className='text-base
+        tablet:text-lg
+        desktop:text-base'>
           <Beginning />
-          <img className='w-full my-[10%]' src={city} alt="City Image"></img>
+          <img className='w-full my-[10%] desktop:my-[5%]' src={city} alt="City Image"></img>
           <WhatWeDo />
         </div>
     );

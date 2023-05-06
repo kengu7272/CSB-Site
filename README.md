@@ -1,4 +1,6 @@
 # CSB-Site
 Beginner react typescript project
 
-This project is for learning a little about full stack web apps
+This project is for learning about building a responsive site
+
+this project has no backend
