@@ -4,7 +4,7 @@ import {app, db} from "../../../firebase"
 
 //get date
 const now = new Date();
-const monthDayYear = (now.getMonth() + 1) + now.getDate() + now.getFullYear();
+const monthDayYear = String((now.getMonth() + 1)) + '/' + String(now.getDate()) + '/' + String(now.getFullYear());
 
 function ContactPage() {
     const messagesCol = collection(db, "messages");
@@ -13,7 +13,7 @@ function ContactPage() {
     let description = "We usually don't bite.";
     return (
         <>
-            <BlueHeader title={title} description={description} /> <p className="border bg-gray-400">{monthDayYear}</p>
+            <BlueHeader title={title} description={description} /> <p className="text-3xl border-white text-center">{monthDayYear}</p>
 
             <div className="flex justify-center">
                 <div className="w-[40%] m-[8%] h-[75vh] bg-[#5c5c5c] rounded-lg border relative text-center">
