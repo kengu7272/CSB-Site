@@ -29,7 +29,7 @@ function Positions() {
     return (
         <>
         <div className='flex items-center justify-center'>
-            <button className="my-[10%] h-[10vh] w-[75vw] desktop:h-[15vh] desktop:w-[50vw]" onClick={() => setToggle(toggle == false
+            <button className="my-[10%] desktop:my-[5%] h-[10vh] w-[75vw] desktop:h-[15vh] desktop:w-[50vw]" onClick={() => setToggle(toggle == false
             ? true : false)}>Open Positions</button>
         </div>
             <div style={{display: toggle == false
