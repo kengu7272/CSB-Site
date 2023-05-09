@@ -1,6 +1,6 @@
 # CSB-Site
 
-csb-site.web.app
+https://csb-site.web.app
 
 Beginner react typescript project
 
